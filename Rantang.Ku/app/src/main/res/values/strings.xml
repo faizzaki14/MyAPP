@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RantangKu</string>
+    <string name="login_txt">Login</string>
+    <string name="email_txt">Email</string>
+    <string name="password_txt">Password</string>
+    <string name="don_t_have_an_account_txt">Don\'t have an account?</string>
+    <string name="todo">TODO</string>
+    <string name="register_txt">Register</string>
+    <string name="already_have_an_account_login">Already have an account?</string>
+    <string name="nama_lengkap_txt">Nama Lengkap</string>
+</resources>
