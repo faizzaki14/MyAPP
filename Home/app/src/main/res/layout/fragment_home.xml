@@ -12,6 +12,7 @@
        android:layout_width="178dp"
        android:layout_height="41dp"
        android:text="Purwokerto Utara"
+       android:layout_marginStart="14dp"
        app:chipBackgroundColor="#FB9E9E"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintStart_toStartOf="parent"

@@ -33,10 +33,6 @@ class HomeFragment : Fragment() {
         return root
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
