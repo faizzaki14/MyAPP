@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.faizzakiramadhan_19104075.myapplication.ui.notifications.NotificationsFragment"
+        android:name="com.faizzakiramadhan_19104075.myapplication.ui.Profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
