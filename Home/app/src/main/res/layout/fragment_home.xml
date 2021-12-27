@@ -19,6 +19,7 @@
           android:id="@+id/chip4"
           android:layout_width="178dp"
           android:layout_height="41dp"
+          android:layout_marginTop="20dp"
           android:layout_marginStart="10dp"
           android:text="Purwokerto Utara"
           app:chipBackgroundColor="#FB9E9E"
