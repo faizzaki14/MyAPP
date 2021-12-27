@@ -250,12 +250,97 @@
 
     <TextView
         android:id="@+id/tumbal"
+        android:layout_marginStart="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutcard1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:foregroundGravity="center"
+        android:text="JOIN WITH US" />
+
+    <TextView
+        android:id="@+id/tumbal2"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tumbal"
         android:layout_marginTop="20dp"
         android:foregroundGravity="center"
+        android:text="Contact Us"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tumbal3"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tumbal2"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/tumbal4"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tumbal3"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:text="WhatsApp" />
+
+    <TextView
+        android:id="@+id/tumbal5"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tumbal4"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:text="Our Location" />
+
+    <TextView
+        android:id="@+id/tumbal6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tumbal5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="-106dp"
+        android:foregroundGravity="center"
+        android:text=" : myrantangapps@gmail.com"
+        app:layout_constraintStart_toEndOf="@+id/tumbal3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tumbal7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tumbal5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="-66dp"
+        android:foregroundGravity="center"
+        android:text=" : 08888888888888"
+        app:layout_constraintStart_toEndOf="@+id/tumbal4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tumbal8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tumbal5"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="center"
         android:text="HAhahaha" />
+
+
 
 </RelativeLayout>
 
