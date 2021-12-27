@@ -8,8 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="putih">#FFFFFF</color>
+<<<<<<< HEAD
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700b3</color>
     <color name="colorAccent">#03dac5</color>
     <color name="light_Background">#ecf0f3</color>
+=======
+    <color name="colorPrimary">#EB596E</color>
+    <color name="abu">#F1F1F1</color>
+>>>>>>> cd8790c9b43990d85549b412827442aec098e7cb
 </resources>

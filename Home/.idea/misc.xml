@@ -3,13 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/drawable/border_input.xml" value="0.18076923076923077" />
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/drawable/btn_shape.xml" value="0.2203125" />
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/drawable/circle_shape.xml" value="0.18076923076923077" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/card_item.xml" value="0.18" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/carddd.xml" value="0.20416666666666666" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/fragment_login.xml" value="0.12894736842105264" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/fragment_payment.xml" value="0.22" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/login_fragment.xml" value="0.12894736842105264" />
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/payment_fragment.xml" value="0.25" />
+        <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/layout/register_fragment.xml" value="0.1" />
         <entry key="..\:/Tugas Kuliah/MATKUL/SMT 5/PPB/Tubes/Sprint2/Rantang.Ku clone 2/MyAPP/Home/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17685185185185184" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/drawable/background_nama_harga.xml" value="0.17685185185185184" />
@@ -35,11 +43,17 @@
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/drawable/myrect.xml" value="0.1125" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/activity_main.xml" value="0.30477759472817134" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/card_item.xml" value="0.2" />
-        <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/carddd.xml" value="0.22" />
+        <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/carddd.xml" value="0.6450704225352113" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
+<<<<<<< HEAD
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/fragment_notifications.xml" value="0.25" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/fragment_profile.xml" value="0.20111214087117701" />
+=======
+        <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/fragment_home.xml" value="0.75" />
+        <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/fragment_notifications.xml" value="0.33" />
+        <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+>>>>>>> cd8790c9b43990d85549b412827442aec098e7cb
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17685185185185184" />
         <entry key="..\:/Users/faiz/Documents/GitHub/MyAPP/Home/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17685185185185184" />
