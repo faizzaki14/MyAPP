@@ -346,11 +346,25 @@
         <include layout="@layout/location_fragment" />
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/imageButtonShare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_share_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/mapppss"
+        app:layout_constraintTop_toBottomOf="@+id/mapppss"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/tumbal8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mapppss"
+        android:layout_below="@+id/imageButtonShare"
         android:layout_marginTop="50dp"
         android:foregroundGravity="center"
         android:text="HAhahaha" />

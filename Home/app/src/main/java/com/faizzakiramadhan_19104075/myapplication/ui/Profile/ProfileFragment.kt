@@ -1,5 +1,6 @@
 package com.faizzakiramadhan_19104075.myapplication.ui.Profile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -30,7 +31,18 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        return root
+        _binding!!.imageButtonShare.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type = "text/plain"
+            val url = "https://web.whatsapp.com/"
+            intent.putExtra("Share This",url)
+
+            val chooser = Intent.createChooser(intent, "Share Using : ")
+            startActivity(chooser)
+        }
+
+        return binding.root
     }
 
     override fun onDestroyView() {
