@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    tools:context=".MainActivity"
     android:layout_width="match_parent">
 
 <RelativeLayout
@@ -294,15 +295,15 @@
 
     <TextView
         android:id="@+id/tumbal5"
-        android:layout_marginStart="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tumbal4"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:foregroundGravity="center"
-        android:text="Our Location" />
+        android:text="Our Location"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tumbal6"
@@ -331,11 +332,25 @@
         app:layout_constraintStart_toEndOf="@+id/tumbal4"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/mapppss"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/tumbal5"
+        app:layout_constraintTop_toBottomOf="@+id/tumbal5">
+
+        <include layout="@layout/location_fragment" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tumbal8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tumbal5"
+        android:layout_below="@+id/mapppss"
         android:layout_marginTop="50dp"
         android:foregroundGravity="center"
         android:text="HAhahaha" />
