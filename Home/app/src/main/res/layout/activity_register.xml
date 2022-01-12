@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.Register.RegisterFragment">
+    tools:context=".ui.Register.RegisterActivity">
 
     <TextView
         android:id="@+id/tvRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
-        android:text="Register"
+        android:layout_marginTop="100dp"
+        android:text="@string/register_txt"
         android:textColor="@color/black"
         android:textSize="48sp"
         android:textStyle="bold"
@@ -23,7 +23,7 @@
         android:id="@+id/tvLogin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account?"
+        android:text="@string/already_have_an_account_login"
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:textColor="@color/black"
@@ -36,8 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="55dp"
-        android:text="Login"
+        android:layout_marginEnd="32dp"
+        android:text="@string/login_txt"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -50,12 +50,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
-        android:text="Email"
+        android:layout_marginTop="230dp"
+        android:text="@string/email_txt"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etEmailReg"
@@ -82,12 +82,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Nama Lengkap"
+        android:layout_marginTop="340dp"
+        android:text="@string/nama_lengkap_txt"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailReg" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etNamaReg"
@@ -115,12 +115,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Password"
+        android:layout_marginTop="450dp"
+        android:text="@string/password_txt"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNamaReg" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etPassReg"
@@ -146,32 +146,30 @@
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+
         android:background="@drawable/btn_shape"
         android:paddingStart="50dp"
         android:paddingTop="8dp"
         android:paddingEnd="50dp"
         android:paddingBottom="8dp"
-        android:text="Register"
+        android:text="@string/register_txt"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassReg"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageButton
         android:id="@+id/btn_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/circle_shape"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
-        app:layout_constraintTop_toBottomOf="@id/etPassReg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.331"
         app:layout_constraintStart_toStartOf="parent"
@@ -182,12 +180,10 @@
         android:id="@+id/btn_fb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/circle_shape"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
-        app:layout_constraintTop_toBottomOf="@id/etPassReg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/facebook"
@@ -197,16 +193,15 @@
         android:id="@+id/btn_twitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/circle_shape"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
-        app:layout_constraintTop_toBottomOf="@id/etPassReg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.668"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/twitter"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
