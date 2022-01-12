@@ -19,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
             override fun onClick(v: View?) {
 
                 startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                finish()
             }
         })
     }
