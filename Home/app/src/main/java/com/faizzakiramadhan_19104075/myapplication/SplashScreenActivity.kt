@@ -10,8 +10,9 @@ import com.faizzakiramadhan_19104075.myapplication.ui.BroadCastReceiver.Internet
 import com.faizzakiramadhan_19104075.myapplication.ui.Login.LoginActivity
 
 class SplashScreenActivity : AppCompatActivity() {
+
     lateinit var receiver: InternetBroadcastReceiver
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
@@ -28,7 +29,6 @@ class SplashScreenActivity : AppCompatActivity() {
         IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION).also {
             registerReceiver(receiver, it)
         }
-
 
     }
 

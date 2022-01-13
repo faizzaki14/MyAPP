@@ -17,7 +17,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.faizzakiramadhan_19104075.myapplication.databinding.ActivityMainBinding
-//import com.faizzakiramadhan_19104075.myapplication.ui.BroadCastReceiver.InternetBroadcastReceiver
+import com.faizzakiramadhan_19104075.myapplication.ui.BroadCastReceiver.InternetBroadcastReceiver
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.SupportMapFragment
@@ -26,6 +26,8 @@ import java.util.ArrayList
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    lateinit var receiver: InternetBroadcastReceiver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +50,18 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+        // internet receiver
+        receiver = InternetBroadcastReceiver()
+        IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION).also {
+            registerReceiver(receiver, it)
+        }
 
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterReceiver(receiver)
     }
 
 }
