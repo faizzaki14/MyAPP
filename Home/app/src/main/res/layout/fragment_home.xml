@@ -119,11 +119,12 @@
           app:layout_constraintVertical_bias="0.021" />
 
       <TextView
-          android:id="@+id/textView4"
+          android:id="@+id/seall"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginEnd="28dp"
           android:text="See All"
+          android:clickable="true"
           android:textColor="#FB7D7D"
           android:textSize="15sp"
           app:layout_constraintBottom_toBottomOf="@+id/textView3"
