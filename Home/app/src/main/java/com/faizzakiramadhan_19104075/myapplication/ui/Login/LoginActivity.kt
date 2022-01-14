@@ -57,4 +57,14 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser != null){
+            Intent(this@LoginActivity, MainActivity::class.java ).also {intent ->
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
+        }
+    }
 }

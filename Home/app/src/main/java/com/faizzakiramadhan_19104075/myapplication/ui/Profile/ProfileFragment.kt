@@ -10,11 +10,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.faizzakiramadhan_19104075.myapplication.databinding.FragmentProfileBinding
+import com.faizzakiramadhan_19104075.myapplication.ui.Login.LoginActivity
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : Fragment() {
 
     private lateinit var profileViewModel: ProfileViewModel
     private var _binding: FragmentProfileBinding? = null
+    private lateinit var auth: FirebaseAuth
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -40,6 +44,16 @@ class ProfileFragment : Fragment() {
 
             val chooser = Intent.createChooser(intent, "Share Using : ")
             startActivity(chooser)
+        }
+
+        auth = FirebaseAuth.getInstance()
+
+        _binding!!.tvLogout.setOnClickListener {
+            auth.signOut()
+            Intent(context, LoginActivity::class.java).also { intent ->
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+            }
         }
 
         return binding.root
