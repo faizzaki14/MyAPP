@@ -15,7 +15,6 @@ import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var tvRedirectSignUp: TextView
     lateinit var etEmailLogin: EditText
     private lateinit var etPassLogin: EditText
     lateinit var btnLogin: Button
@@ -48,9 +47,6 @@ class LoginActivity : AppCompatActivity() {
     private fun login() {
         val email = etEmailLogin.text.toString()
         val pass = etPassLogin.text.toString()
-        // calling signInWithEmailAndPassword(email, pass)
-        // function using Firebase auth object
-        // On successful response Display a Toast
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
