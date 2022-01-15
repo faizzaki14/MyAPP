@@ -2,13 +2,12 @@ package com.faizzakiramadhan_19104075.myapplication.ui.Profile
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.faizzakiramadhan_19104075.myapplication.R
 import com.faizzakiramadhan_19104075.myapplication.databinding.FragmentProfileBinding
 import com.faizzakiramadhan_19104075.myapplication.ui.Login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -47,14 +46,6 @@ class ProfileFragment : Fragment() {
         }
 
         auth = FirebaseAuth.getInstance()
-
-        _binding!!.tvLogout.setOnClickListener {
-            auth.signOut()
-            Intent(context, LoginActivity::class.java).also { intent ->
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(intent)
-            }
-        }
 
         return binding.root
     }
