@@ -49,7 +49,7 @@ class LoginActivity : AppCompatActivity() {
         val pass = etPassLogin.text.toString()
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@LoginActivity, MainActivity::class.java )
                 startActivity(intent)
                 finish()
