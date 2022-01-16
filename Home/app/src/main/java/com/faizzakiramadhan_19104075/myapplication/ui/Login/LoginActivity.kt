@@ -3,7 +3,7 @@ package com.faizzakiramadhan_19104075.myapplication.ui.Login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.preference.PreferenceManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -36,12 +36,21 @@ class LoginActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
             login()
+            saveData()
         }
 
         registerLink.setOnClickListener {
            startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
             finish()
         }
+
+        // SharedPreferences
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        pref.apply {
+            val email = getString("EMAIL", "")
+            etEmailLogin.setText(email)
+        }
+
     }
 
     private fun login() {
@@ -66,5 +75,15 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+    }
+
+    //Save Data Login Shared Preferences
+    private fun saveData() {
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        val editor = pref.edit()
+
+        editor
+            .putString("EMAIL", etEmailLogin.text.toString())
+            .apply()
     }
 }
