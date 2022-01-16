@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.faizzakiramadhan_19104075.myapplication.R
 import com.faizzakiramadhan_19104075.myapplication.databinding.FragmentProfileBinding
 import com.faizzakiramadhan_19104075.myapplication.ui.Login.LoginActivity
+import com.faizzakiramadhan_19104075.myapplication.ui.alamat.ListAlamatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_profile.*
 
