@@ -13,11 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+
         <activity
             android:name=".ui.alamat.UpdateActivity"
             android:parentActivityName=".ui.alamat.ListAlamatActivity"
             android:label="Update/Delete Alamat"
             android:exported="false" />
+
         <activity
             android:name=".ui.alamat.TambahAlamatActivity"
             android:exported="false"
