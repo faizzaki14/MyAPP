@@ -15,6 +15,25 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
+            android:name=".ui.alamat.UpdateActivity"
+            android:parentActivityName=".ui.alamat.ListAlamatActivity"
+            android:label="Update/Delete Alamat"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.alamat.TambahAlamatActivity"
+            android:exported="false"
+            android:label="Tambah Alamat"
+            android:parentActivityName=".ui.alamat.ListAlamatActivity" />
+        <activity
+            android:name=".ui.alamat.ListAlamatActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false"
+            android:label="List Alamat" />
+<!--        <activity-->
+<!--            android:name=".Fragment1"-->
+<!--            android:exported="false" />-->
+        <activity
             android:name=".ui.Register.RegisterActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

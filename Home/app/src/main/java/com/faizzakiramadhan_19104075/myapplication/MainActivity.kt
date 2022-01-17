@@ -22,6 +22,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.faizzakiramadhan_19104075.myapplication.databinding.ActivityMainBinding
 import com.faizzakiramadhan_19104075.myapplication.ui.BroadCastReceiver.InternetBroadcastReceiver
 import com.faizzakiramadhan_19104075.myapplication.ui.Login.LoginActivity
+import com.faizzakiramadhan_19104075.myapplication.ui.alamat.ListAlamatActivity
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.SupportMapFragment
@@ -88,6 +89,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     Toast.makeText(this@MainActivity, "Successfully Logged Out", Toast.LENGTH_SHORT).show()
                 }
+                return true
+            }
+            R.id.alamat -> {
+                val intent = Intent(this@MainActivity, ListAlamatActivity::class.java)
+                startActivity(intent)
                 return true
             }
             else -> return true

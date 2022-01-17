@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.faizzakiramadhan_19104075.myapplication.databinding.FragmentProfileBinding
-import com.faizzakiramadhan_19104075.myapplication.ui.dashboard.DataModel.TaskModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.carddd.*
