@@ -30,17 +30,6 @@
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/searchView">
 
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/btn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:neumorph_shapeType="flat"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_baseline_drag_indicator_24">
-
-
-        </soup.neumorphism.NeumorphImageButton>
-
 
     </LinearLayout>
 
